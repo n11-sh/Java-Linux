@@ -1,6 +1,6 @@
 # Java Linux (Java OS)
 
-Java Linux, or Java OS, is an experimental Linux distribution that reimagines the userspace using Java. While the kernel remains Linux based in C, almost everything else—from system tools to core services is built in Java.  
+Java Linux, or Java OS, is an experimental Linux distribution that reimagines the userspace using Java. While the kernel remains Linux based in C, almost everything else, from system tools to core services is built in Java.  
 
 The goal of Java Linux is to provide a modern, secure, and isolated OS environment, focusing on simplicity and minimalism.
 
