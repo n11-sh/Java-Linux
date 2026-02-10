@@ -8,11 +8,7 @@ The goal of Java Linux is to provide a modern, secure, and isolated OS environme
 
 ## Website
 
-This repository contains the official website for Java Linux, including:
-
-- HTML files  
-- CSS styles  
-- Project assets  
+This repository contains the official website for Java Linux, specially HTML files.
 
 The site showcases the project overview, features, and latest updates.
 
