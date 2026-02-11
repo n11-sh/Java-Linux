@@ -5,59 +5,108 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OpenJOS - News</title>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #FFFFFF;
-        color: #4A6B8A;
+        font-family: 'Inter', sans-serif;
+        background-color: #e8e6e1;
+        background-image: 
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.4) 0%, rgba(232, 230, 225, 0) 100%),
+            linear-gradient(180deg, #d6d3cc 0%, #e8e6e1 100%);
+        color: #3e3c39;
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-height: 100vh;
     }
+
     nav {
         width: 100%;
-        background-color: #D9D9D9;
+        background-color: rgba(217, 217, 217, 0.4);
+        backdrop-filter: blur(10px);
         display: flex;
         justify-content: center;
-        padding: 15px 0;
-        box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(74, 107, 138, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
+
     nav a {
         color: #4A6B8A;
         text-decoration: none;
-        margin: 0 20px;
-        font-weight: bold;
-        font-size: 16px;
-    }
-    nav a:hover {
-        opacity: 0.8;
-    }
-    h1 {
-        font-size: 48px;
-        margin: 40px 0 20px 0;
-    }
-    .news-container {
-        max-width: 850px;
-        text-align: left;
-        font-size: 18px;
-        line-height: 1.8;
-        margin-bottom: 50px;
-    }
-    .news-item {
-        margin-bottom: 30px;
-    }
-    .news-date {
+        margin: 0 25px;
+        font-weight: 400;
         font-size: 14px;
-        color: #D9D9D9;
-        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.4s ease;
     }
+
+    nav a:hover {
+        color: #5c6e58;
+        letter-spacing: 4px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        font-weight: 400;
+        font-style: italic;
+        color: #2c3e50;
+        margin: 60px 0 40px 0;
+        opacity: 0.9;
+    }
+
+    .news-container {
+        max-width: 700px;
+        width: 90%;
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .news-item {
+        margin-bottom: 60px;
+        position: relative;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(74, 107, 138, 0.1);
+    }
+
+    .news-item:last-child {
+        border-bottom: none;
+    }
+
+    .news-date {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #4A6B8A;
+        margin-bottom: 12px;
+        opacity: 0.7;
+    }
+
     .news-title {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 5px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #3e3c39;
+        margin-bottom: 15px;
+        line-height: 1.2;
     }
+
     .news-text {
         font-size: 17px;
+        line-height: 1.8;
+        font-weight: 300;
+        color: #4f4c48;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 42px; }
+        .news-title { font-size: 24px; }
+        .news-text { font-size: 16px; }
     }
 </style>
 </head>
@@ -83,6 +132,7 @@
     </div>
 
     <div class="news-item">
+        <div class="news-date">Initial Phase</div>
         <div class="news-title">Project Initialization</div>
         <div class="news-text">
             OpenJOS is in early stages. The core concept is set, and I'm gradually working on the foundational structure. The website will evolve as the system grows. Expect updates on features, progress, and experiments soon.
@@ -90,7 +140,7 @@
     </div>
 
     <div class="news-item">
-        <div class="news-date">Next Updates</div>
+        <div class="news-date">Future Roadmap</div>
         <div class="news-title">Downloads Coming Soon</div>
         <div class="news-text">
             I'm planning to add a Downloads page soon, even though no actual code or binaries are ready yet. This will show the format and layout that future releases will follow.
