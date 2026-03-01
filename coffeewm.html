@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenJOS - Coffee WM</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #e8e6e1;
+        background-image: 
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.4) 0%, rgba(232, 230, 225, 0) 100%),
+            linear-gradient(180deg, #d6d3cc 0%, #e8e6e1 100%);
+        color: #3e3c39;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    nav {
+        width: 100%;
+        background-color: rgba(217, 217, 217, 0.4);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(74, 107, 138, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #4A6B8A;
+        text-decoration: none;
+        margin: 0 25px;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.4s ease;
+    }
+
+    nav a:hover {
+        color: #5c6e58;
+        letter-spacing: 4px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        font-weight: 400;
+        font-style: italic;
+        color: #2c3e50;
+        margin: 60px 0 40px 0;
+        opacity: 0.9;
+    }
+
+    .content {
+        max-width: 750px;
+        width: 90%;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 100px;
+        font-weight: 300;
+        color: #4f4c48;
+    }
+
+    .content p {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .content p:first-of-type::first-letter {
+        font-family: 'Playfair Display', serif;
+        font-size: 50px;
+        float: left;
+        line-height: 1;
+        margin-right: 10px;
+        color: #4A6B8A;
+        font-style: italic;
+    }
+
+    .content p:nth-of-type(4) {
+        font-style: italic;
+        border-left: 2px solid #5c6e58;
+        padding-left: 30px;
+        color: #5c6e58;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 42px; }
+        .content { font-size: 16px; text-align: left; }
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="coffeewm.html">Coffee WM</a>
+    <a href="news.html">News</a>
+    <a href="devs.html">Devs</a>
+</nav>
+
+<h1>Coffee WM</h1>
+
+<div class="content">
+    <p>
+        Coffee WM is a long term idea for OpenJOS. It is not a confirmed component, nor a feature planned for early releases. It exists as a direction, a possibility, and a reflection of how the graphical layer of the system could evolve in the future. The intention is not to rush graphical capabilities, but to imagine what a window management environment might look like if it were designed from the same philosophy that shapes OpenJOS.
+    </p>
+
+    <p>
+        At its core, Coffee WM would aim to be a minimal and calm window manager, focused on clarity rather than decoration. It would not try to compete with heavy desktop environments, nor overwhelm the system with visual complexity. Instead, it would provide a simple layer responsible for organizing windows, managing focus, and handling workspace logic in a predictable and controlled way.
+    </p>
+
+    <p>
+        The conceptual difference lies in integration. Because OpenJOS centers its userspace around Java, Coffee WM would ideally communicate naturally with system services written in the same ecosystem. Configuration, window behavior, and service communication could be handled through structured Java based components instead of fragmented configuration files scattered across the filesystem. The goal would be coherence rather than novelty.
+    </p>
+
+    <p>
+        This idea is not about speed or forcing early graphical support into the system. It is about long term balance. Stability must come first. The foundation of OpenJOS must mature before any graphical environment is seriously considered. If Coffee WM ever becomes real, it would likely arrive months after a fully stable release, possibly even a year or more later, depending on how development evolves. There is no rush, only direction.
+    </p>
+
+    <p>
+        Philosophically, Coffee WM reflects simplicity without emptiness. A window manager should not dominate attention. It should quietly support focus, allowing the user to remain present with their work. Clean layouts, intentional spacing, and predictable behavior would define its design. The system should feel intentional, not busy.
+    </p>
+
+    <p>
+        Technically, it could explore lightweight compositing, structured configuration through Java classes, and modular communication with system services. But all of this remains exploratory. Coffee WM may change significantly, merge into another concept, or even be replaced entirely. It is a living idea, not a locked roadmap feature.
+    </p>
+
+    <p>
+        Ultimately, Coffee WM represents curiosity. It is the question of what happens when a window manager grows from the same roots as the system beneath it. Whether it materializes or transforms into something different, it exists as part of the long term vision of OpenJOS: thoughtful, experimental, and patient.
+    </p>
+</div>
+
+</body>
+</html>
